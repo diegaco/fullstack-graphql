@@ -1,7 +1,8 @@
 {
   "user": {
-    "id": "jBWMVGjm50l6LGwepDoty",
-    "username": "frontendmaster"
+    "id": "pGSPppRjfQuxtmgNSNa0C",
+    "createdAt": 1584920602579,
+    "username": "Gabriel"
   },
   "pet": [
     {
@@ -21,6 +22,18 @@
       "createdAt": "12-10-2020",
       "name": "Fidel",
       "type": "DOG"
+    },
+    {
+      "id": "gG58rjNKaRKnIyjtw4LjZ",
+      "createdAt": 1584918957667,
+      "name": "Garfield 2",
+      "type": "CAT"
+    },
+    {
+      "id": "OIPo5-p2YBiYZruwaOQHv",
+      "createdAt": 1584919001363,
+      "name": "Garfield 4",
+      "type": "CAT"
     }
   ]
 }

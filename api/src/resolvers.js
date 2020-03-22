@@ -11,13 +11,21 @@ module.exports = {
     pets(_, {input}, ctx, info) {
       return ctx.models.Pet.findMany(input)
     },
-    user(_, args, ctx, info) {
-      return ctx.models.User.findOne()
+    user(_, {input}, ctx, info) {
+      return ctx.models.User.findOne(input)
+    },
+    users(_, {input}, ctx, info) {
+      return ctx.models.User.findMany(input)
     },
   },
-  // Mutation: {
-
-  // },
+  Mutation: {
+    newPet(_, {input}, ctx, info) {
+      return ctx.models.Pet.create(input)
+    },
+    newUser(_, { input }, ctx, info) {
+      return ctx.models.User.create(input)
+    }
+  },
   // Pet: {
   //   img(pet) {
   //     return pet.type === 'DOG'

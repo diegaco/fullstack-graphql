@@ -6,7 +6,7 @@ const { gql } = require('apollo-server')
 const typeDefs = gql`
   type User {
     id: ID!
-    name: String!
+    username: String!
   }
 
   type Pet {
@@ -16,16 +16,34 @@ const typeDefs = gql`
     type: String
   }
 
+  input UserInput {
+    username: String
+  }
+
+  input NewUserInput {
+    username: String
+  }
+
   input PetInput {
     name: String
     type: String
   }
 
+  input NewPetInput {
+    name: String!
+    type: String!
+  }
+
   type Query {
-    user(id: ID!): User
+    user(input: UserInput): User
+    users(input: UserInput): [User]!
     pet(input: PetInput): Pet
     pets(input: PetInput): [Pet]!
-    users: [User]!
+  }
+
+  type Mutation {
+    newPet(input: NewPetInput!): Pet!
+    newUser(input: NewUserInput!): User!
   }
 
 `;
