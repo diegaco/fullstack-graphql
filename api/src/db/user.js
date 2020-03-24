@@ -11,7 +11,7 @@ const createUserModel = db => {
       const newUser = {id: nanoid(), createdAt: Date.now(), ...user}
       db.set('user', newUser)
         .write()
-  
+
       return newUser
     }
   }

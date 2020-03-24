@@ -9,31 +9,21 @@
       "id": 1,
       "createdAt": "12-10-2020",
       "name": "Garfield",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "pGSPppRjfQuxtmgNSNa0C"
     },
     {
       "id": 2,
       "createdAt": "12-10-2020",
       "name": "Simon",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "pGSPppRjfQuxtmgNSNa0C"
     },
     {
-      "id": 3,
-      "createdAt": "12-10-2020",
-      "name": "Fidel",
-      "type": "DOG"
-    },
-    {
-      "id": "gG58rjNKaRKnIyjtw4LjZ",
       "createdAt": 1584918957667,
       "name": "Garfield 2",
-      "type": "CAT"
-    },
-    {
-      "id": "OIPo5-p2YBiYZruwaOQHv",
-      "createdAt": 1584919001363,
-      "name": "Garfield 4",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "pGSPppRjfQuxtmgNSNa0C"
     }
   ]
 }
