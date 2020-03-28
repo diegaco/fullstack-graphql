@@ -42,7 +42,7 @@ export default function NewPet({onSubmit, onCancel}) {
             onChange={e => setName(e.target.value)}
             required
           />
-          <a className="error button" onClick={cancel}>cancel</a>          
+          <a className="error button" onClick={cancel}>cancel</a>
           <button type="submit" name="submit">add pet</button>
         </form>
       </div>
