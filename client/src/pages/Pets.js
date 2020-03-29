@@ -12,6 +12,10 @@ const ALL_PETS = gql`
       name
       type
       img
+      owner {
+        id
+        age @client
+      }
     }
   }
 `;
@@ -23,6 +27,10 @@ const CREATE_PET = gql`
       name
       type
       img
+      owner ´{
+        id
+        age @client
+      }
       __typename
     }
   }
@@ -78,6 +86,8 @@ export default function Pets() {
   if (modal) {
     return <NewPetModal onSubmit={onSubmit} onCancel={() => setModal(false)} />
   }
+
+  console.log(queryData.pets);
 
   return (
     <div className="page pets-page">
